@@ -11,7 +11,7 @@ export default {
   methods: {
     developerName() {
       let developer = new Developer(this.firstName, this.lastName);
-      return developer.fullName;
+      return developer.fullName.trim();
     }
   }
 }
